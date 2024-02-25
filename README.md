@@ -13,6 +13,7 @@ NLP Project
     ],
     "Eligibility": [
         "Inclusion Criteria:",
+        "  WHO performance status 0 or 1",
         "Exclusion Criteria:",
         "  Participants unwilling to comply with study procedures.",
         "  CrCl < 10 ml/min"
