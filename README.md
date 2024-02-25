@@ -1,5 +1,7 @@
 # NLP_LLM
 NLP Project
+
+##Training Data CTR
 ```json
 {
     "Clinical Trial ID": "NCT01537029",
@@ -31,3 +33,16 @@ NLP Project
 }
 ```
 
+###Training Data Labels
+```json
+   "40f1d3ce-2ff8-4177-9b11-0bf10b7f6591": {
+        "Type": "Single",
+        "Section_id": "Results",
+        "Primary_id": "NCT00259090",
+        "Statement": "the primary trial studies the impact of Fulvestrant, Anastrozole on Oestrogen Receptor H-score.",
+        "Label": "Entailment",
+        "Primary_evidence_index": [
+            1
+        ]
+    },
+```
