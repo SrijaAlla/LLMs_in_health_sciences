@@ -35,6 +35,7 @@ NLP Project
 ```
 
 ## Training Data Labels
+### Single
 ```json
    "40f1d3ce-2ff8-4177-9b11-0bf10b7f6591": {
         "Type": "Single",
@@ -46,4 +47,24 @@ NLP Project
             1
         ]
     }
+```
+
+### Comparison
+```json
+  "20545360-b2a1-4be9-997a-97040866b239": {
+        "Type": "Comparison",
+        "Section_id": "Eligibility",
+        "Primary_id": "NCT00880464",
+        "Secondary_id": "NCT00458237",
+        "Statement": "Patients with AIDS are eligible for both the secondary trial and the primary trial.",
+        "Label": "Contradiction",
+        "Primary_evidence_index": [
+            14,
+            18
+        ],
+        "Secondary_evidence_index": [
+            12,
+            26
+        ]
+    },
 ```
