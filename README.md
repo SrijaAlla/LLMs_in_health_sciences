@@ -1,7 +1,7 @@
 # NLP_LLM
 NLP Project
 
-##Training Data CTR
+## Training Data CTR
 ```json
 {
     "Clinical Trial ID": "NCT01537029",
@@ -33,7 +33,7 @@ NLP Project
 }
 ```
 
-###Training Data Labels
+## Training Data Labels
 ```json
    "40f1d3ce-2ff8-4177-9b11-0bf10b7f6591": {
         "Type": "Single",
