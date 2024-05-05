@@ -74,10 +74,10 @@ Team Members
     }
 ```
 ## Architecture of Model
-![Local Image](./images/Model Architecture.png "Architecture")
+![Local Image](./images/Modelarchitecture.png "Architecture")
 
 ### Evidence Selection
-![Local Image](./images/Evidence Selection.png "Evidence Selection Model")
+![Local Image](./images/Evidenceselection.png "Evidence Selection Model")
 
 ### Entailment Task
 ![Local Image](./images/Entailment.png "Entailment Task")
