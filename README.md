@@ -1,6 +1,6 @@
 # CSE 635 Project - LLMs in Health Sciences
-Team Name - Context Clan
-Team Members 
+### Team Name - Context Clan
+### Team Members 
 - Leela Srija Alla
     - UBIT Name: lalla
 - Vishnu Teja jampala
@@ -82,7 +82,7 @@ Team Members
 ### Entailment Task
 ![Local Image](./images/Entailment.png "Entailment Task")
 
-#Code Execution
+# Code Execution
 ## Baseline Model Implementations
 
 We considered three Large Language Models (LLMs) and Sebis as our baseline models. The files are provided in the directory `./src/code/milestone_2`.
@@ -128,8 +128,18 @@ The finetuned models are provided in the directory `./src/code/milestone_3`.
 
 For finetuning - 
 - Us the code in `./src/code/milesone_3/finetuned-deberta-v3-small-drop.ipynb`.
-- Save the `model.safetensors` and 'config.json` after running this and use this model in Sebis. 
+- Save the `model.safetensors` and `config.json` after running this and use this model in Sebis. 
+Here's the updated `train` function which includes changes to the path for loading a model:
 
+```python
+def train(model_name):
+    # model_name = "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
+
+    # Load the models. Adjust max instance length to fit your machine.
+    tokenizer = AutoTokenizer.from_pretrained(model_name, model_max_length=1024, use_safetensors=True)
+    model = AutoModelForSequenceClassification.from_pretrained('./path/to/directory/containing model.safetensors and config.json',
+                                                                num_labels=2, ignore_mismatched_sizes=True)
+```
 
  ### Sebis finetuned Notebooks
 
