@@ -73,13 +73,14 @@ Team Members
         ]
     }
 ```
-##Architecture of Model
-![Local Image](./path/to/image.jpg "Local Image Title")
+## Architecture of Model
+![Local Image](./images/Model Architecture.png "Architecture")
 
-###Evidence Selection
-![Local Image](./path/to/image.jpg "Local Image Title")
+### Evidence Selection
+![Local Image](./images/Evidence Selection.png "Evidence Selection Model")
 
-###Entailment Task
+### Entailment Task
+![Local Image](./images/Entailment.png "Entailment Task")
 
 #Code Execution
 ## Baseline Model Implementations
