@@ -85,17 +85,17 @@ Team Members
 #Code Execution
 ## Baseline Model Implementations
 
-We considered three Large Language Models (LLMs) and Sebis as our baseline models. The files are mentioned in the directory `path/to/milestone_2`.
+We considered three Large Language Models (LLMs) and Sebis as our baseline models. The files are provided in the directory `./src/code/milestone_2`.
 
-### Jupyter Notebook Files and Data Sources
+### LLM Notebooks
 
-- **Biobert-base-cased-v1-2-results.ipynb**
-- **Deberta-v3-small-mnli-fever-docnli-ling-2c-results.ipynb**
-- **Debertav3small-nli4ct_results.ipynb** 
+- **biobert-base-cased-v1-2-results.ipynb**
+- **deberta-v3-small-mnli-fever-docnli-ling-2c-results.ipynb**
+- **debertav3small-nli4ct_results.ipynb** 
 
 These notebooks utilize CSV files located in `/data/Training Data csv.zip`.
 
-### CSV File Paths
+#### CSV File Paths
 
 The paths specified in the above notebooks need to be updated when reading the following files:
 - `train_hypothesis_evidences.csv`
@@ -109,19 +109,35 @@ The paths specified in the above notebooks need to be updated when reading the f
 - `Eligibility_hypothesis_evidences.csv`
 - `Intervention_hypothesis_evidences.csv`
 
-Additionally, the paths to `.pt` files in these notebooks should also be changed accordingly.
+Additionally, the paths to save `.pt` files in these notebooks should also be changed accordingly.
 
-### Additional Notebooks
+### Sebis Notebooks
 
-- **notfinetuned-pipeline-whole_results.ipynb**
-- **sebis-joint-debertav3.ipynb**
+- Pipeline Model -**notfinetuned-pipeline-whole_results.ipynb**
+- Joint Model - **sebis-joint-debertav3.ipynb**
+
+These notebooks use files located in `Training DATA json.zip`.
+
+#### JSON File Paths
+
+The paths to `.json` files in the above two notebooks should be updated as needed.
+
+## Fine-tuned Models
+ 
+The finetuned models are provided in the directory `./src/code/milestone_3`.
+
+For finetuning - 
+- Us the code in `./src/code/milesone_3/finetuned-deberta-v3-small-drop.ipynb`.
+- Save the `model.safetensors` and 'config.json` after running this and use this model in Sebis. 
+
+
+ ### Sebis finetuned Notebooks
+
+- Finetuned with Dataset 1 - **finetuned-pipeline-results-small-dataset.ipynb**
+- Finetuned with Dataset 2 - **finetuned-pipeline-results-large-dataset.ipynb**
 
 These notebooks use files located in `Training DATA json.zip`.
 
 ### JSON File Paths
 
 The paths to `.json` files in the above two notebooks should be updated as needed.
-
-###Fine-tuned Models
-
-
