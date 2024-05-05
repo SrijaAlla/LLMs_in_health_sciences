@@ -136,7 +136,7 @@ DEV_PATH = "/kaggle/input/data-json/data/dev.json"
 # load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_nli_path, model_max_length=1024)
 ```
-- The paths to `.json` files in the above two notebooks should be updated as needed.
+- The paths to `.json` files in this notebook should be updated as needed.
 
 ## Fine-tuned Models
  
@@ -179,5 +179,5 @@ DEV_PATH = "/kaggle/input/data-json/data/dev.json"
 # load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_nli_path, model_max_length=1024)
 ```
-- The paths to `.json` files in the above two notebooks should be updated as needed.
+- The paths to `.json` files in this notebook should be updated as needed.
 
