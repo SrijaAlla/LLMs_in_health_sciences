@@ -126,10 +126,11 @@ The paths to `.json` files in the above two notebooks should be updated as neede
 - Error Analysis was done for Sebis Pipeline as it gave the best results and the code is provided in `./src/code/milestone_2/error-analysis-milestone2.ipynb`
 - Save the `model.safetensors` and `config.json` after running `src/code/milestone_2
 /notfinetuned-pipeline-whole_results.ipynb` and use this model in `./src/code/milestone_2/error-analysis-milestone2.ipynb` by changing path `model_nli_path`
+- `sebis-not-finetuned` should contain `model.safetensors` and `config.json` 
 
 ```python
 # trained model checkpoint
-model_nli_path = "/kaggle/input/sebis-pipeline"
+model_nli_path = "/kaggle/input/sebis-not-finetuned"
 DEV_PATH = "/kaggle/input/data-json/data/dev.json"
 
 # load model and tokenizer
