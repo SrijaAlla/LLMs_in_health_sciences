@@ -1,7 +1,12 @@
-# CSE 635
-NLP Project
+# CSE 635 Project - LLMs in Health Sciences
+Team Name - Context Clan
+Team Members 
+- Leela Srija Alla
+    - UBIT Name: lalla
+- Vishnu Teja jampala
+    - UBIT NAME: vjampala  
 
-## Training Data CTR
+## Example Training Data CTR
 ```json
 {
     "Clinical Trial ID": "NCT01537029",
@@ -68,3 +73,54 @@ NLP Project
         ]
     }
 ```
+##Architecture of Model
+![Local Image](./path/to/image.jpg "Local Image Title")
+
+###Evidence Selection
+![Local Image](./path/to/image.jpg "Local Image Title")
+
+###Entailment Task
+
+#Code Execution
+## Baseline Model Implementations
+
+We considered three Large Language Models (LLMs) and Sebis as our baseline models. The files are mentioned in the directory `path/to/milestone_2`.
+
+### Jupyter Notebook Files and Data Sources
+
+- **Biobert-base-cased-v1-2-results.ipynb**
+- **Deberta-v3-small-mnli-fever-docnli-ling-2c-results.ipynb**
+- **Debertav3small-nli4ct_results.ipynb** 
+
+These notebooks utilize CSV files located in `/data/Training Data csv.zip`.
+
+### CSV File Paths
+
+The paths specified in the above notebooks need to be updated when reading the following files:
+- `train_hypothesis_evidences.csv`
+- `dev_hypothesis_evidences.csv`
+- `Numerical_Statements_hypothesis_evidences.csv`
+- `Non_Numerical_Statements_hypothesis_evidences.csv`
+- `Single_hypothesis_evidences.csv`
+- `Comparison_hypothesis_evidences.csv`
+- `AdverseEvents_hypothesis_evidences.csv`
+- `Results_hypothesis_evidences.csv`
+- `Eligibility_hypothesis_evidences.csv`
+- `Intervention_hypothesis_evidences.csv`
+
+Additionally, the paths to `.pt` files in these notebooks should also be changed accordingly.
+
+### Additional Notebooks
+
+- **notfinetuned-pipeline-whole_results.ipynb**
+- **sebis-joint-debertav3.ipynb**
+
+These notebooks use files located in `Training DATA json.zip`.
+
+### JSON File Paths
+
+The paths to `.json` files in the above two notebooks should be updated as needed.
+
+###Fine-tuned Models
+
+
