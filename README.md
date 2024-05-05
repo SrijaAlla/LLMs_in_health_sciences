@@ -167,9 +167,11 @@ These notebooks use files located in `Training DATA json.zip`.
 
 The paths to `.json` files in the above two notebooks should be updated as needed.
 ### Error Analysis 
-- Error Analysis was done for Sebis Pipeline fine-tuned on Dataset 2 as it gave the best results and the code is provided in `./src/code/milestone_2/error-analysis-milestone2.ipynb`
+- Error Analysis was done for Sebis Pipeline fine-tuned on Dataset 2 as it gave the best results and the code is provided in `src/code/milestone_3
+/error-analysis-milestone3.ipynb`
 - Save the `model.safetensors` and `config.json` after running `/src/code/milestone_3
-/finetuned-pipeline-results-large-dataset.ipynb` and use this model in `./src/code/milestone_2/error-analysis-milestone2.ipynb` by changing path `model_nli_path`
+/finetuned-pipeline-results-large-dataset.ipynb` and use this model in `src/code/milestone_3
+/error-analysis-milestone3.ipynb` by changing path `model_nli_path`
 
 ```python
 # trained model checkpoint
